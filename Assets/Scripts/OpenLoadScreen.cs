@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OpenLoadScreen : MonoBehaviour
 {
-    [SerializeField] private GameObject _loadScreen;
-
+    [SerializeField] private int _id;
     public void OpenBootScreen()
     {
-        _loadScreen.SetActive(true);
+        SceneManager.LoadSceneAsync(_id);
     }
 }
