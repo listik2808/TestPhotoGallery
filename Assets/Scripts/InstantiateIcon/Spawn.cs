@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
-namespace Scripts
+namespace Scripts.InstantiateIcon
 {
     public class Spawn : MonoBehaviour
     {
         [SerializeField] private LoadingIcons _loadingIcons;
-        [SerializeField]private ConteinerIcons _conteinerIcons;
+        [SerializeField] private ConteinerIcons _conteinerIcons;
         [SerializeField] private Item _item;
         [SerializeField] private Transform _container;
 

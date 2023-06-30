@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +10,6 @@ namespace Scripts
         private int _id =0;
 
         public int ID => _id;
-        public Image Image=> _image;
 
         public void SetId( int id)
         {

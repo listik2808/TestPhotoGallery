@@ -1,21 +1,24 @@
+using Scripts.StaticData;
 using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace Scripts
+namespace Scripts.TransitionBetweenScenes
 {
     public class LoadLoby : MonoBehaviour
     {
         [SerializeField] private Image _imageBar;
         [SerializeField] private TMP_Text _textBar;
-        [SerializeField] private int _sceneID;
+
+        private int _sceneID;
 
         private AsyncOperation _asyncOperation;
 
-        private void OnEnable()
+        private void Start()
         {
+            _sceneID = Data.Level;
             StartCoroutine(NextScene());
         }
 
